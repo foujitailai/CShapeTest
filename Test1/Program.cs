@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Test1
 {
 	[AttributeUsage(AttributeTargets.Property | AttributeTargets.Class, AllowMultiple = true)]
-	public class ColumnAttribute : Attribute
+	public class ColumnAttribute : System.Attribute
 	{
 		public string ColumnName { get; set; }
 		public string ColumnAlias { get; set; }
@@ -48,11 +48,9 @@ namespace Test1
         static void Main(string[] args)
         {
 			Console.WriteLine($"Main begin");
-			t3();
+			t5();
 			Console.WriteLine($"Main end");
             Console.ReadKey();
-
-            new TestValueConvert().Test();
         }
 
 		static void t1()
@@ -74,5 +72,13 @@ namespace Test1
 			Console.WriteLine(ti.ToString());
 		}
 
+        static void t4()
+        {
+            new TestValueConvert().Test();
+        }
+        static void t5()
+        {
+            new testAttribute().Test();
+        }
     }
 }
