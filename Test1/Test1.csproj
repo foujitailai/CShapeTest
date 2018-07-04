@@ -45,6 +45,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestAsync.cs" />
+    <Compile Include="TestValueConvert.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

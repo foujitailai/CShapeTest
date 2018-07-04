@@ -17,6 +17,8 @@ namespace Test1
             Console.WriteLine($"Main end");
 
             Console.ReadKey();
+
+            new TestValueConvert().Test();
         }
 
     }
